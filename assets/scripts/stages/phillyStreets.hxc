@@ -416,6 +416,16 @@ class PhillyStreetsStage extends Stage
 		//frameBufferMan.createFrameBuffer("lightmap", 0xFF000000);
 	}
 
+	var screen:FixedBitmapData;
+	override function draw()
+	{
+		super.draw();
+
+		//screen = grabScreen(false);
+		//BitmapDataUtil.applyFilter(screen, blurFilter);
+		//rainShader.blurredScreen = screen;
+	}
+
 	public override function onPause(event:PauseScriptEvent) {
 		super.onPause(event);
 
